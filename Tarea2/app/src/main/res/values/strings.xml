@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tarea2</string>
+
+    <string name="titulo_pedido">Realizar Pedido</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="label_platillo">Elige tu platillo:</string>
+    <string name="platillo_hamburguesa">Hamburguesa</string>
+    <string name="platillo_pizza">Pizza</string>
+    <string name="platillo_ensalada">Ensalada</string>
+    <string name="label_extras">Extras:</string>
+    <string name="extra_papas">Papas fritas</string>
+    <string name="extra_refresco">Refresco</string>
+    <string name="boton_ordenar">Ordenar</string>
+
+    <string name="titulo_confirmacion">¿Confirmar tu pedido?</string>
+    <string name="label_terminos">Acepto términos y condiciones</string>
+    <string name="boton_confirmar">Confirmar pedido</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="desc_imagen_confirmacion">Ícono de pedido</string>
+</resources>
