@@ -16,12 +16,12 @@ En `app/src/main/java/com/example/tarea2/MainActivity.java`, dentro de
 
 ```java
 // Pantalla 1: pedido
-setContentView(R.layout.pedido);
-setupPedido();
+// setContentView(R.layout.pedido);
+// setupPedido();
 
 // Pantalla 2: confirmacion
-// setContentView(R.layout.confirmacion);
-// setupConfirmacion();
+setContentView(R.layout.confirmacion);
+setupConfirmacion();
 ```
 
 Para revisar la otra pantalla:
