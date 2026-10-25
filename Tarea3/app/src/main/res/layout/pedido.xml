@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla 1: formulario de pedido. Se muestra cuando MainActivity.onCreate()
+     llama a setContentView(R.layout.pedido). -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_pedido"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Nombre del cliente -->
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_platillo"
+            android:textStyle="bold" />
+
+        <!-- Selección del platillo -->
+        <RadioGroup
+            android:id="@+id/rgPlatillo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbHamburguesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/platillo_hamburguesa" />
+
+            <RadioButton
+                android:id="@+id/rbPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/platillo_pizza" />
+
+            <RadioButton
+                android:id="@+id/rbEnsalada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/platillo_ensalada" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_extras"
+            android:textStyle="bold" />
+
+        <!-- complementos opcionales: admite selección múltiple -->
+        <CheckBox
+            android:id="@+id/chkPapas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extra_papas" />
+
+        <CheckBox
+            android:id="@+id/chkRefresco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extra_refresco" />
+
+        <!-- Al presionarlo, dispara el onClick para mostrar un resumen -->
+        <Button
+            android:id="@+id/btnOrdenar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/boton_ordenar" />
+
+        <!-- en esta parte se escribe el resumen del pedido. -->
+        <TextView
+            android:id="@+id/lblResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

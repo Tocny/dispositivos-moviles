@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla 2: confirmación del pedido. Se muestra cuando MainActivity.onCreate()
+     llama a setContentView(R.layout.confirmacion). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Icono de carrito de compras-->
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/desc_imagen_confirmacion"
+        android:src="@drawable/ic_pedido" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo_confirmacion"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Debe marcarse para que btnConfirmar acepte el pedido -->
+    <CheckBox
+        android:id="@+id/chkTerminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_terminos" />
+
+    <!-- éxito o error según chkTerminos -->
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/boton_confirmar" />
+
+    <!-- Toast de "Pedido cancelado" -->
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/boton_cancelar" />
+
+</LinearLayout>
